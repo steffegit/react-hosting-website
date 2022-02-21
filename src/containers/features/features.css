@@ -1,0 +1,140 @@
+.host__features {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 8px;
+
+  /* ff 3.6+ */
+  background: -moz-linear-gradient(
+    124deg,
+    rgba(9, 9, 121, 1) 0%,
+    rgba(10, 10, 143, 1) 70%,
+    rgba(10, 10, 177, 1) 85%,
+    rgba(0, 146, 212, 1) 100%
+  );
+
+  /* safari 5.1+,chrome 10+ */
+  background: -webkit-linear-gradient(
+    124deg,
+    rgba(9, 9, 121, 1) 0%,
+    rgba(10, 10, 143, 1) 70%,
+    rgba(10, 10, 177, 1) 85%,
+    rgba(0, 146, 212, 1) 100%
+  );
+
+  /* opera 11.10+ */
+  background: -o-linear-gradient(
+    124deg,
+    rgba(9, 9, 121, 1) 0%,
+    rgba(10, 10, 143, 1) 70%,
+    rgba(10, 10, 177, 1) 85%,
+    rgba(0, 146, 212, 1) 100%
+  );
+
+  /* ie 6-9 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0092D4', endColorstr='#090979', GradientType=0 );
+
+  /* ie 10+ */
+  background: -ms-linear-gradient(
+    124deg,
+    rgba(9, 9, 121, 1) 0%,
+    rgba(10, 10, 143, 1) 70%,
+    rgba(10, 10, 177, 1) 85%,
+    rgba(0, 146, 212, 1) 100%
+  );
+
+  /* global 94%+ browsers support */
+  background: linear-gradient(
+    124deg,
+    rgba(9, 9, 121, 1) 0%,
+    rgba(10, 10, 143, 1) 70%,
+    rgba(10, 10, 177, 1) 85%,
+    rgba(0, 146, 212, 1) 100%
+  );
+}
+
+.host__features-feature {
+  display: flex;
+}
+
+.host__features-feature .host__features-container__feature {
+  margin: 0;
+}
+
+.host__features-feature .host__features-feature-text {
+  max-width: 700px;
+}
+
+.host__features-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4rem 0 2rem;
+}
+
+.host__features-heading h1 {
+  font-size: 34px;
+  line-height: 45px;
+  font-weight: 800;
+  max-width: 510px;
+}
+
+.host__features-heading p {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 500;
+  color: var(--color-subtext);
+  cursor: pointer;
+}
+
+.host__features-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.host__features-container .host__features-container__feature {
+  flex: 1;
+  margin: 1rem;
+  min-width: 210px;
+  display: unset;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 850px) {
+  .host__features-heading {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 0rem;
+  }
+
+  .host__features-heading p {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  /* Customizing feature component as per needs */
+  .host__features-feature .gpt3__features-container__feature {
+    flex-direction: column;
+  }
+
+  /* Customizing feature component as per needs */
+  .host__features-feature .host__features-container_feature-text {
+    margin-top: 0.5rem;
+  }
+
+  .host__features-heading h1 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  /* Customizing feature component as per needs */
+  .host__features-container .host__features-container__feature {
+    margin: 1rem 0;
+    min-width: 100%;
+  }
+}

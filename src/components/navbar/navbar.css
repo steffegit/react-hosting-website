@@ -1,0 +1,131 @@
+.host__navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 6rem;
+}
+
+.host__navbar-links {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.host__navbar-links_logo {
+  margin-right: 2rem;
+}
+
+.host__navbar-links_logo img {
+  width: 60px;
+  height: 60px;
+}
+
+.host__navbar-links_container {
+  display: flex;
+  flex-direction: row;
+}
+
+.host__navbar-sign {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.host__navbar-links_container p,
+.host__navbar-sign p,
+.host__navbar-menu_container p {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25px;
+  text-transform: capitalize;
+
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+.host__navbar-sign button,
+.host__navbar-menu_container button {
+  background: #ff4820;
+  color: #fff;
+  border: 0;
+  outline: none;
+  padding: 1rem 2rem;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.host__navbar-menu {
+  margin-left: 1rem;
+  display: none;
+  position: relative;
+}
+
+.host__navbar-menu svg {
+  transform: rotateY(-180deg);
+  cursor: pointer;
+}
+
+.host__navbar-menu_container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: column;
+
+  text-align: end;
+  background: var(--color-footer);
+  padding: 2rem;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  margin-top: 1rem;
+  min-width: 210px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.host__navbar-menu_container p {
+  margin: 1rem 0;
+}
+
+.host__navbar-menu_container-links-sign {
+  display: none;
+}
+
+@media screen and (max-width: 1050px) {
+  .host__navbar-links_container {
+    display: none;
+  }
+
+  .host__navbar-menu {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .host__navbar {
+    padding: 2rem 4rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .host__navbar {
+    padding: 2rem;
+  }
+
+  .host__navbar-sign {
+    display: none;
+  }
+
+  .host__navbar-menu_container {
+    top: 20px;
+  }
+
+  .host__navbar-menu_container-links-sign {
+    display: block;
+  }
+}

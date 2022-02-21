@@ -1,0 +1,136 @@
+.host__package-container__option {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+
+  color: #fff;
+
+  background-color: rgba(9, 9, 121, 1);
+  border-radius: 18px;
+  margin: 2rem;
+  padding: 2rem;
+}
+
+.host__package-container__option-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.host__package-container__option-title img {
+  width: 80%;
+  height: 80%;
+  background-color: rgba(173, 216, 230, 0.322);
+  padding: 2rem;
+  border-radius: 18px;
+
+  margin-bottom: 3rem;
+}
+
+.host__package-container__option-title h1 {
+  display: flex;
+  margin-bottom: 2rem;
+  font-size: 48px;
+  line-height: 60px;
+
+  font-weight: 800;
+}
+
+.host__package-container__option-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.host__package-container__option-text p {
+  color: var(--color-text);
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.host__package-container__option-text h3 {
+  margin-top: 3rem;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 42px;
+}
+
+.host__package-container__option-text h4 {
+  font-weight: 800;
+  font-size: 48px;
+}
+
+.host__package-container__option-text button {
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  background-color: #ff4820;
+  color: #fff;
+  border: 0;
+  outline: 0;
+  border-radius: 8px;
+
+  font-size: 18px;
+  line-height: 28px;
+  cursor: pointer;
+}
+
+.host__package-container__option-text div {
+  width: 200px;
+  height: 2px;
+  background: white;
+  /* opacity: 0.8; */
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+}
+/* 
+.host__package-container__option-text div:first-of-type {
+  margin-top: 5rem;
+  width: 150px;
+  opacity: 0.5;
+} */
+
+@media screen and (max-width: 1200px) {
+  .host__package-container__option-title img {
+    width: 70%;
+    height: 70%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .host__package-container__option-title h1 {
+    font-size: 34px;
+  }
+
+  .host__package-container__option-text h4 {
+    font-size: 38px;
+  }
+
+  .host__package-container__option-text p {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .host__package-container__option-text button {
+    margin-top: 2rem;
+    padding: 1rem;
+  }
+
+  .host__package-container__option-title img {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .host__package-container__option {
+    margin: 1rem 0;
+  }
+}
